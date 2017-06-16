@@ -10,6 +10,7 @@ import subprocess
 import re
 import fcntl
 import traceback
+import shutil
 
 
 CREATE_SERVER = 3
