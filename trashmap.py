@@ -101,7 +101,7 @@ def createserver(order):
     # create serverdir and move map
     serverdir = os.path.join("/srv/trashmap/servers", order["identifier"])
     os.mkdir(serverdir)
-    shutil.copyfile(os.path.join(serverdir, "init.cfg"), "/srv/trashmap/srv/init.cfg"
+    shutil.copyfile(os.path.join(serverdir, "init.cfg"), "/srv/trashmap/srv/init.cfg")
     os.mkdir(os.path.join(serverdir, "maps"))
     os.rename(order["mapfile"], os.path.join(serverdir, "maps", order["mapname"]+".map"))
     # add server to memory
